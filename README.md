@@ -84,13 +84,14 @@ Allowing a GET to create a question is in violation of REST principles, but it m
 
 ### How to test this all works!?!
 
-The easiest way is to run the executable, fire up a web browser and visit:
- http://localhost:8080/ask/Some nice question
-and then try: 
- http://localhost:8080/ask/Some nice question about socialism
-and then visit:
- http://localhost:8080/list
-to see the results. 
+ - The easiest way is to run the executable, fire up a web browser and visit:
+   - http://localhost:8080/ask/Some nice question
+ - and then try: 
+   - http://localhost:8080/ask/Some nice question about socialism
+ - and then visit:
+   - http://localhost:8080/list
+ - to see the results. 
+
 If you have a HTTP Headers plugin in your browser, you can see the different HTTP status codes that are returned depending on the success of the call.   
 
 Alternatively: 
