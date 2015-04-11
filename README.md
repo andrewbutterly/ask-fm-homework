@@ -29,9 +29,10 @@ The file application.properties in ./src/main/resources/ can be modified to chan
 
 The embedded web server will run on port 8080 by default. If you would like to change this, please change the "server.port" value in the application.properties file. 
 
-If you want to change the MAX rate as which questions can be asked for a particular country, chance the value for "general.maxQPerSecondPerCountry" in the application.properties file.
+If you want to change the MAX rate as which questions can be asked for a particular country, change the value for "general.maxQPerSecondPerCountry" in the application.properties file.
 
 **Persistent store**
+
 The service uses a relational database for storing Questions, etc. By default it will use the embedded HSQL database provided with Spring Boot. So no database configuration is required 
 to run the application once it has been compiled with Maven. 
 
@@ -48,13 +49,17 @@ to run the application once it has been compiled with Maven.
 ### Building / testing the code
 
 This is a standalone Spring Boot application built using Maven, so it can be directly run from the root project folder:
- - mvn spring-boot:run
+
+mvn spring-boot:run
+
 Or you can package it by running:
- - mvn package
+
+mvn package
+
 This will run the unit tests (including tests that execute the application and do a few basic actions on the embedded database).
 These tests can also be manually re-run using:
- - mvn test
 
+mvn test
 
 If you wish to test this app as a WAR file, please send me a message and I'll change the pom.xml
 
